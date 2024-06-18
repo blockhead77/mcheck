@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>M-Check Tool</title>
+</head>
+<body>
+    <div class="img-container">
+        <img src="assets/img/bicycle_m.png" alt="M-Check">
+        
+    </div>
+    <br>   
+        <div class="mcheck-container">
+          <p id="question-title">Rear Tyre Pressure</p>
+          <p id="question-text">Squeeze your tyre to check the air. How would you say it feels? Can you sit on the saddle without the tyre squashing too much?</p>
+          <div class="answers-container">
+            <label>
+              <input name="choice" type="radio" value="Nice and firm">
+              Nice and firm
+            </label><br>
+            <label>
+              <input name="choice" type="radio" value="A bit soft">
+              A bit soft
+            </label><br>
+            <label>
+              <input name="choice" type="radio" value="Totally flat">
+              Totally flat
+            </label><br>
+            <button type="submit" onclick="nextQuestion()"> Submit Answer</button>           
+          </div>
+          <p id="input"></p>
+        </div>
+    
+      </div>
+      <script src="assets/js/script.js"></script>
+</body>
+</html>
