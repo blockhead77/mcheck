@@ -7,15 +7,18 @@
     <title>M-Check Tool</title>
 </head>
 <body>
-    <div class="img-container">
+    <div class="mcheck-container">
         <img src="assets/img/bicycle_m.png" alt="M-Check">
         
     </div>
-    <br>   
-        <div class="mcheck-container">
-          <p id="question-title">Rear Tyre Pressure</p>
-          <p id="question-text">Squeeze your tyre to check the air. How would you say it feels? Can you sit on the saddle without the tyre squashing too much?</p>
-          <div class="answers-container">
+    <br> 
+    <div id="q0" class="question-container">
+      <p> Let's M-Check your cycle. We'll start at the rear wheel and work our way through the M-check to ensure you're safe to ride. This is great check if you've gotten the bike out of storage and need to give it a good once over. At the end you have a nice report that you can consider yourself or take to a mechanic to get further help.</p>
+      <button type="submit" onclick="nextQ()"> Start M-Check</button>
+    </div>
+    
+        <div id="q1" class="question-container">
+          <p class="question-title">Check you tyre for air. When you give it a squeeze is it should be firm. If you're unsure, try sitting on the bike. How is your tyre?</p>
             <label>
               <input name="choice" type="radio" value="Nice and firm">
               Nice and firm
