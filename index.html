@@ -7,34 +7,59 @@
     <title>M-Check Tool</title>
 </head>
 <body>
-    <div class="mcheck-container">
-        <img src="assets/img/bicycle_m.png" alt="M-Check">
-        
-    </div>
-    <br> 
-    <div id="q0" class="question-container">
-      <p> Let's M-Check your cycle. We'll start at the rear wheel and work our way through the M-check to ensure you're safe to ride. This is great check if you've gotten the bike out of storage and need to give it a good once over. At the end you have a nice report that you can consider yourself or take to a mechanic to get further help.</p>
+  <div class="mcheck-container">
+    <img id="mcheck" src="assets/img/bicycle_m.png" alt="M-Check">
+  </div>
+  <br> 
+  <div id="q0" class="question-container">
+      <h1>Let's M-Check your cycle!</h1>
+      <p> We'll start at the rear wheel and work our way through the M-check to ensure you're safe to ride. This is great check if you've gotten the bike out of storage and need to give it a good once over. At the end you have a nice report that you can consider yourself or take to a mechanic to get further help.</p>
       <button type="submit" onclick="nextQ()"> Start M-Check</button>
-    </div>
-    
-        <div id="q1" class="question-container">
-          <p class="question-title">Check you tyre for air. When you give it a squeeze is it should be firm. If you're unsure, try sitting on the bike. How is your tyre?</p>
-            <label>
-              <input name="choice" type="radio" value="Nice and firm">
-              Nice and firm
-            </label><br>
-            <label>
-              <input name="choice" type="radio" value="A bit soft">
-              A bit soft
-            </label><br>
-            <label>
-              <input name="choice" type="radio" value="Totally flat">
-              Totally flat
-            </label><br>
-            <button type="submit" onclick="nextQuestion()"> Submit Answer</button>           
-          </div>
-          <p id="input"></p>
-        </div>
+  </div> 
+        
+ <div id="q1" class="question-container">
+  <h2>Check your tyre for air.</h2>
+  <p class="question-title">When you give it a squeeze is it should be firm. If you're unsure, try sitting on the bike. How is your tyre?</p>
+  <label>
+  <input type="radio" name="My rear tyre is " value="nice and firm">
+  Nice and firm
+  </label><br>
+  <label>
+  <input type="radio" name="My rear tyre is " value="a bit soft">
+  A bit soft
+  </label><br>
+  <label>
+  <input type="radio" name="My rear tyre is " value="totally flat">
+  Totally flat
+  </label><br><br>
+  <button type="submit" onclick="addtoreport(); nextQ();"> Submit Answer</button>           
+ </div>
+ <div id="q2" class="question-container">
+  <h2>Is your wheel attached properly?</h2>
+  <p class="question-title">Whether you have a quick release or the wheel is bolted on, it needs to be secure. If you have a quick release, make sure the word "close" is visible and it's firmly pushed on towards the frame. If you have a nut and bolt make sure the nut is tight on both sides. How would you say your wheel is attached?"</p>
+    <label>
+      <input name="My rear wheel is " type="radio" value="firmly attached">
+      Nice and firm
+    </label><br>
+    <label>
+      <input name="My rear wheel is" type="radio" value="a bit loose">
+      A bit soft
+    </label><br>
+    <label>
+      <input name="My rear wheel is" type="radio" value="falling off.">
+      Totally flat
+    </label><br>
+    <button type="submit" onclick="addtoreport(); nextQ();"> Submit Answer</button>           
+  </div>
+  <br>
+ <div id="bike_report" class="question-container">
+  <h2>Your Bike Report</h2>
+  <br>
+  <p>Your answers to the M-Check have show that your cycle is in the following condition:</p>
+  <br>
+  <p id="report"></p>
+ </div>
+      
     
       </div>
       <script src="assets/js/script.js"></script>
