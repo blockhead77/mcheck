@@ -53,14 +53,14 @@
   </div>
   <div id="q3" class="question-container display-none">
     <h2 class="question-title">Is your wheel running freely?</h2>
-    <p class="question">Grab the saddle and lift your rear wheel off the ground. Spin the rear wheel to see if runs freely. How does it spin?"</p>
+    <p class="question">Grab the saddle and lift your rear wheel off the ground. Spin the rear wheel to see if it rotates freely. How does it spin?"</p>
       <label>
         <input name="My rear wheel " type="radio" value="spins really smooth.">
        Spins really smooth
       </label><br>
       <label>
         <input name="My rear wheel " type="radio" value=" wobbles a bit side to side, sometimes touches the brakes.">
-        Wobbles side to side a bit, sometimes touches the brakes.
+        Wobbles side to side a bit, sometimes touches the brakes
       </label><br>
       <label>
         <input name="My rear wheel " type="radio" value="seems like its stuck.">
@@ -86,6 +86,36 @@
         <button type="submit" onclick="nextQuestion()"> Submit Answer</button>           
       </div>
       <br>
+      <div id="q5" class="question-container display-none">
+        <h2 class="question-title">Check seatpost safety.</h2>
+        <p class="question">"If your seatpost is inserted into the frame properly you shouldn't see a line of ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦ marks like that. Are the minimum insertion lines visible?"</p>
+          <label>
+            <input name="My seatpost looks to be " type="radio" value="inserted safely.">
+          No, the seatpost looks to be inserted properly
+          </label><br>
+          <label>
+            <input name="My seatpost looks to be " type="radio" value="too high, I can see the ¦¦¦¦¦¦¦ minumum insertion marks">
+          Yes, looks like my seatpost is too high, I can see the ¦¦¦¦¦¦¦¦¦ minimum insertion marks
+          </label>
+          <br><br>
+          <button type="submit" onclick="nextQuestion()"> Submit Answer</button>           
+        </div>
+        <br>
+        <div id="q6" class="question-container display-none">
+          <h2 class="question-title">How are the pedals?</h2>
+          <p class="question">Check to see that the pedals are firmly attached and they spin freely. How do they feel?"</p>
+            <label>
+              <input name="My pedals " type="radio" value="spin smoothly and feel properly attached.">
+             Pedals spin smoothly and feel properly attached
+            </label><br>
+            <label>
+            <input name="My pedals " type="radio" value=" don't spin freely or feel properly attached.">
+             My pedals don't spin freely or feel properly attached
+            </label><br>
+            <br>
+            <button type="submit" onclick="nextQuestion()"> Submit Answer</button>           
+          </div>
+          <br>
  <div id="bike_report" class="report-container display-none">
   <h2>Your Bike Report</h2>
   <br>

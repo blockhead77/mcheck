@@ -31,12 +31,27 @@ function addToReport() {
       }
   }
 }
-
+//Function to update the m-check image with progress
+function updateCheckImage(){
+    if (currentQuestion == 0) {
+    document.getElementById('mcheck').src = "/assets/img/bicycle_m.png";
+    }else if (currentQuestion >= 1 && currentQuestion <= 3) {
+    document.getElementById('mcheck').src = "/assets/img/check1.png";
+    }else if (currentQuestion >= 4 && currentQuestion <= 5) {
+      document.getElementById('mcheck').src = "/assets/img/check2.png";
+      }else if (currentQuestion >= 6 && currentQuestion <= 8) {
+        document.getElementById('mcheck').src = "/assets/img/check3.png";
+        }
+  }
+  //Function to show next question
 function nextQuestion (){
     addToReport();
     nextQ();
+    updateCheckImage();
     }
 
 function startQuiz (){
         nextQ();
+        updateCheckImage(); 
   }
+  window.onload = updateCheckImage;
