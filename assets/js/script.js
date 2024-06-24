@@ -1,24 +1,26 @@
 //Variables
 let currentQuestion = 0;
 let previousQuestion = -1;
-let questionsAnswered = 0;
-const ids = ["q0","q1","q2","q3"]
+const ids = ["q0","q1","q2","q3","q4","q5","q6","q7","q8","q9","q10","q11","q12","q13","q14","q15","q16","q17","q18","q19","q20"]
 
 //Function to start quiz and show next question in the survery
 function nextQ() {
   currentQuestion++;
   previousQuestion++;
-  console.log(currentQuestion)
-  questionsAnswered++;
   let nextShow = document.getElementById(ids[currentQuestion]);
   nextShow.style.display = "block";
   let preHide = document.getElementById(ids[previousQuestion]);
   preHide.style.display = "none"; 
   }
-
+function showReport() {
+  let preHide = document.getElementById(ids[previousQuestion]);
+  preHide.style.display = "none"; 
+  let reportshow = document.getElementById("bike-report");
+  preHide.style.display = "block"; 
+}
 // Function to capture radio input and add it to final report
-function addtoreport() {
-  document.getElementById("report").innerHTML = "";
+function addToReport() {
+  document.getElementById("report").innerHTML =" ";
   var ele = document.getElementsByTagName('input');
   for (i = 0; i < ele.length; i++) {
       if (ele[i].type = "radio") {
@@ -30,8 +32,11 @@ function addtoreport() {
   }
 }
 
-  //function myFunction(num) {
-  //  document.getElementById('mcheck').src = num + "bicycle_m.png";
-  //}
-  //  myFunction(1);
+function nextQuestion (){
+    addToReport();
+    nextQ();
+    }
 
+function startQuiz (){
+        nextQ();
+  }

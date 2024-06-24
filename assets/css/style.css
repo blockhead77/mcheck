@@ -39,39 +39,19 @@ body {
     border-radius: 15px;
     box-shadow: 0px 40px 40px -20px #000;
   }
-.question-title {
-  color:#2980b9;
-  font-size: 1.2rem;
+.question {
+  color:#000000;
+  font-size: 1.rem;
   font-weight: bold;
   align-items: center;
 }
-#q0 {
-  display: block;
+.question-title {
+  color:#ff0000;
+  font-size: 2rem;
+  align-items: center;
 }
-#q1 {
+.display-none{
   display: none;
 }
-#q2 {
-  display: none;
-}
-#q3 {
-  display: none;
-}
-#q4 {
-  display: none;
-}
-#q5 {
-  display: none;
-}
-#q6 {
-  display: none;
-}
-#q7 {
-  display: none;
-}
-#q8 {
-  display: none;
-}
-
 
 

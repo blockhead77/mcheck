@@ -14,45 +14,79 @@
   <div id="q0" class="question-container">
       <h1>Let's M-Check your cycle!</h1>
       <p> We'll start at the rear wheel and work our way through the M-check to ensure you're safe to ride. This is great check if you've gotten the bike out of storage and need to give it a good once over. At the end you have a nice report that you can consider yourself or take to a mechanic to get further help.</p>
-      <button type="submit" onclick="nextQ()"> Start M-Check</button>
+      <button class="startButton" onclick="startQuiz()" type="submit"> Start M-Check</button>
   </div> 
         
- <div id="q1" class="question-container">
-  <h2>Check your tyre for air.</h2>
-  <p class="question-title">When you give it a squeeze is it should be firm. If you're unsure, try sitting on the bike. How is your tyre?</p>
+ <div id="q1" class="question-container display-none">
+  <h2 class="question-title">Check your tyre for air.</h2>
+  <p class="question">When you give it a squeeze is it should be firm. If you're unsure, try sitting on the bike. How is your tyre?</p>
   <label>
-  <input type="radio" name="My rear tyre is " value="nice and firm">
+  <input type="radio" name="My rear tyre is " value="nice and firm.">
   Nice and firm
   </label><br>
   <label>
-  <input type="radio" name="My rear tyre is " value="a bit soft">
+  <input type="radio" name="My rear tyre is " value="a bit soft.">
   A bit soft
   </label><br>
   <label>
-  <input type="radio" name="My rear tyre is " value="totally flat">
+  <input type="radio" name="My rear tyre is " value="totally flat.">
   Totally flat
   </label><br><br>
-  <button type="submit" onclick="addtoreport(); nextQ();"> Submit Answer</button>           
+  <button type="submit" onclick="nextQuestion()"> Submit Answer</button>           
  </div>
- <div id="q2" class="question-container">
-  <h2>Is your wheel attached properly?</h2>
-  <p class="question-title">Whether you have a quick release or the wheel is bolted on, it needs to be secure. If you have a quick release, make sure the word "close" is visible and it's firmly pushed on towards the frame. If you have a nut and bolt make sure the nut is tight on both sides. How would you say your wheel is attached?"</p>
+ <div id="q2" class="question-container display-none">
+  <h2 class="question-title">Is your wheel attached properly?</h2>
+  <p class="question">Whether you have a quick release or the wheel is bolted on, it needs to be secure. If you have a quick release, make sure the word "close" is visible and it's firmly pushed on towards the frame. If you have a nut and bolt make sure the nut is tight on both sides. How would you say your wheel is attached?"</p>
     <label>
-      <input name="My rear wheel is " type="radio" value="firmly attached">
-      Nice and firm
+      <input name="My rear wheel is " type="radio" value="firmly attached.">
+     Firmly attached
     </label><br>
     <label>
-      <input name="My rear wheel is" type="radio" value="a bit loose">
-      A bit soft
+      <input name="My rear wheel is " type="radio" value="a bit loose.">
+      A bit loose
     </label><br>
     <label>
-      <input name="My rear wheel is" type="radio" value="falling off.">
-      Totally flat
-    </label><br>
-    <button type="submit" onclick="addtoreport(); nextQ();"> Submit Answer</button>           
+      <input name="My rear wheel is " type="radio" value="falling off.">
+      Falling off
+    </label><br><br>
+    <button type="submit" onclick="nextQuestion()"> Submit Answer</button>           
   </div>
-  <br>
- <div id="bike_report" class="question-container">
+  <div id="q3" class="question-container display-none">
+    <h2 class="question-title">Is your wheel running freely?</h2>
+    <p class="question">Grab the saddle and lift your rear wheel off the ground. Spin the rear wheel to see if runs freely. How does it spin?"</p>
+      <label>
+        <input name="My rear wheel " type="radio" value="spins really smooth.">
+       Spins really smooth
+      </label><br>
+      <label>
+        <input name="My rear wheel " type="radio" value=" wobbles a bit side to side, sometimes touches the brakes.">
+        Wobbles side to side a bit, sometimes touches the brakes.
+      </label><br>
+      <label>
+        <input name="My rear wheel " type="radio" value="seems like its stuck.">
+        Seems like its stuck
+      </label><br><br>
+      <button type="submit" onclick="nextQuestion()"> Submit Answer</button>           
+    </div>
+    <div id="q4" class="question-container display-none">
+      <h2 class="question-title">Is your saddle attached properly?</h2>
+      <p class="question">Grab the saddle and give it a really firm twist left and right, it shouldn't move. If your saddle is too loose you could lose balance while riding. How does your saddle feel?"</p>
+        <label>
+          <input name="My saddle " type="radio" value="is firmly attached.">
+         Is firmly attached
+        </label><br>
+        <label>
+          <input name="My saddle " type="radio" value="moved a tiny bit.">
+         moved a tiny bit
+        </label><br>
+        <label>
+          <input name="My saddle " type="radio" value="pulled out or the frame.">
+          pulled out of the frame
+        </label><br><br>
+        <button type="submit" onclick="nextQuestion()"> Submit Answer</button>           
+      </div>
+      <br>
+ <div id="bike_report" class="report-container display-none">
   <h2>Your Bike Report</h2>
   <br>
   <p>Your answers to the M-Check have show that your cycle is in the following condition:</p>
