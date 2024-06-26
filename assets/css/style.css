@@ -57,7 +57,7 @@ img {
 
 .question {
   color: #000000;
-  font-size: 1.rem;
+  font-size: 1rem;
   font-weight: bold;
   align-items: center;
 }
@@ -102,12 +102,12 @@ img {
   padding-top: 56.25%; 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   div#mobile {
     display: none;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     p#mobile {
       display: none;
 }
