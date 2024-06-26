@@ -103,7 +103,7 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-  div.mobile {
+  div#mobile {
     display: none;
   }
 }
