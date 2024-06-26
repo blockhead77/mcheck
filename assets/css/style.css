@@ -103,9 +103,14 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-  p#mobile {
+  div.mobile {
     display: none;
   }
+}
+@media screen and (max-width: 600px) {
+    p#mobile {
+      display: none;
+}
 }
 .flexible-iframe {
   position: absolute;
