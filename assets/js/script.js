@@ -44,17 +44,17 @@ function showReport() {
 //Function to update the m-check image with progress
 function updateCheckImage() {
   if (currentQuestion == 0) {
-    document.getElementById('mcheck').src = "/assets/img/bicycle_m.png";
+    document.getElementById('mcheck').src = "assets/img/bicycle_m.png";
   } else if (currentQuestion >= 1 && currentQuestion <= 3) {
-    document.getElementById('mcheck').src = "/assets/img/check1.png";
+    document.getElementById('mcheck').src = "assets/img/check1.png";
   } else if (currentQuestion >= 4 && currentQuestion <= 5) {
-    document.getElementById('mcheck').src = "/assets/img/check2.png";
+    document.getElementById('mcheck').src = "assets/img/check2.png";
   } else if (currentQuestion >= 6 && currentQuestion <= 7) {
-    document.getElementById('mcheck').src = "/assets/img/check3.png";
+    document.getElementById('mcheck').src = "assets/img/check3.png";
   } else if (currentQuestion >= 8 && currentQuestion <= 9) {
-    document.getElementById('mcheck').src = "/assets/img/check4.png";
+    document.getElementById('mcheck').src = "assets/img/check4.png";
   } else if (currentQuestion >= 10 && currentQuestion <= 12) {
-    document.getElementById('mcheck').src = "/assets/img/check5.png";
+    document.getElementById('mcheck').src = "assets/img/check5.png";
   }
 }
 //Function to show next question
