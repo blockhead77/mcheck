@@ -3,7 +3,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-
 }
 
 img {
@@ -16,7 +15,7 @@ img {
 }
 
 .nav-bar-text {
-  color: rgb(219, 48, 48);
+  color: rgb(252, 255, 215);
   font-weight: bolder;
   font-size: larger;
 }
@@ -103,6 +102,11 @@ img {
   padding-top: 56.25%; 
 }
 
+@media screen and (max-width: 900px) {
+  div.mobile {
+    display: none;
+  }
+}
 .flexible-iframe {
   position: absolute;
   top: 0;
