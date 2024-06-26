@@ -70,6 +70,11 @@ function startQuiz() {
 }
 window.onload = updateCheckImage;
 
+function copyReport(text) {
+  window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+  }
+
+
 //Google Maps Script: the following code was modified by myself based on a Google guide on how to use Map API's //
 
 let pos;
@@ -182,6 +187,7 @@ function showDetails(placeResult, marker, status) {
     console.log('showDetails failed: ' + status);
   }
 }
+
 function showPanel(placeResult) {
   // If infoPane is already open, close it
   if (infoPane.classList.contains("open")) {
