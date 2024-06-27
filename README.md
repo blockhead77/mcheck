@@ -2,7 +2,7 @@
   <img src="" alt="Home Page">
 </div>
 
-[The M-Check](https://blockhead77.github.io/mcheck/index.html)  has been created to help those lacking in mechanical knowledge, to properly diagnose their cycle's safety or roadworthiness.
+[The M-Check](https://blockhead77.github.io/mcheck/)  has been created to help those lacking in mechanical knowledge, to properly diagnose their cycle's safety or roadworthiness.
 
 ## Table of Contents
 1. <details open>
