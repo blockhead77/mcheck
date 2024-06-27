@@ -111,12 +111,12 @@ img {
   padding-top: 56.25%; 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 300px) {
   div#mobile {
     display: none;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 300px) {
     p#mobiles {
       display: none;
 }
