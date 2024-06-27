@@ -116,11 +116,7 @@ img {
     display: none;
   }
 }
-@media screen and (max-width: 300px) {
-    p#mobiles {
-      display: none;
-}
-}
+
 .flexible-iframe {
   position: absolute;
   top: 0;

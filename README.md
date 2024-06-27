@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="" alt="Home Page">
+  <img src="assets/img/readme/responsive.JPG" alt="Home Page">
 </div>
 
 [The M-Check](https://blockhead77.github.io/mcheck/)  has been created to help those lacking in mechanical knowledge, to properly diagnose their cycle's safety or roadworthiness.
