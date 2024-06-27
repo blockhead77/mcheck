@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
   <title>M-Check Tool</title>
 </head>
@@ -29,18 +32,18 @@
     <img id="mcheck" src="assets/img/bicycle_m.png" style="max-width:400px;width:100%" alt="M-Check">
   </div>
   <br>
-  <div id="q0" class="question-container">
-    <h1>Let's M-Check your cycle!</h1>
-    <p> This is a great check if you've gotten the bike out of storage and need to give it a good once over. At the end you'll have a nice
+  <div id="q0" class="question-container montserrat-inform ">
+    <h1>Let's M-Check!</h1>
+    <p class="montserrat-inform"> This is a great check if you've gotten the bike out of storage and need to give it a good once over. At the end you'll have a nice
       report that you can consider yourself or take to a mechanic to get further help.</p>
       <br>
-      <p style="background-color:rgb(243, 123, 123);">If part of the check is not applicable to your cycle you can skip it and just click submit. Not all cycles are created equally 🙂</p>
+      <p class="montserrat-inform" style="background-color:rgb(243, 123, 123);">If part of the check is not applicable to your cycle you can skip it and just click submit. Not all cycles are created equally 🙂</p>
     <button class="startButton" onclick="startQuiz()" type="submit"> Start M-Check</button>
   </div>
 
-  <div id="q1" class="question-container display-none">
+  <div id="q1" class="question-container display-none montserrat-inform">
     <h2 class="question-title">Check your tyre for air.</h2>
-    <p class="question">When you give it a squeeze is it should be firm. If you're unsure, try sitting on the bike. How
+    <p class="question montserrat-inform">When you give it a squeeze is it should be firm. If you're unsure, try sitting on the bike. How
       is your tyre?</p>
     <label>
       <input type="radio" name="My rear tyre is " value="nice and firm.">
@@ -264,7 +267,7 @@
       help with those things that are beyond your current ability. </p>
     <p id="report"></p>
     <br>
-    <p>If you would like to copy this report to save it for later, press the button below followed by the 'CTRL and C'. You can then paste it or save it somewhere else by pressing 'CTRL and V'.</p>
+    <p>If you would like to copy this report to save it for later, press the button below followed by the 'CTRL/CMD and C'. You can then paste it or save it somewhere else by pressing 'CTRL/CMD and V'.</p>
     <p>If you're on a mobile, hold your finger on the text until the option to copy is displayed. You can do the same to paste somewhere else later.</p>
     <button type="submit" onclick="copyReport(document.getElementById('report').innerHTML)">Copy your report</button>
   </div>

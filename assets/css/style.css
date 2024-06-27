@@ -9,9 +9,19 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+.montserrat-inform {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: bold;
+}
 
 .navbar{
   background-color: rgb(52, 42, 90);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: bold;
 }
 
 .nav-bar-text {
@@ -27,7 +37,7 @@ img {
   height:auto; 
   padding-top:10px;
   width:100%; 
-  text-align:center"
+  text-align:center;
 }
 .mcheck-container {
   max-width: max-content;
@@ -50,6 +60,7 @@ img {
   color: #000;
   border-radius: 15px;
   box-shadow: 0px 40px 40px -20px #000;
+  text-align: center;
 }
 
 .report-container {
