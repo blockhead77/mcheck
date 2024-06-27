@@ -34,7 +34,7 @@
     <p> This is a great check if you've gotten the bike out of storage and need to give it a good once over. At the end you'll have a nice
       report that you can consider yourself or take to a mechanic to get further help.</p>
       <br>
-      <p>If part of the check is not applicable to your cycle you can skip it and just click submit. Not all cycles are created equally 🙂</p>
+      <p style="background-color:rgb(243, 123, 123);">If part of the check is not applicable to your cycle you can skip it and just click submit. Not all cycles are created equally 🙂</p>
     <button class="startButton" onclick="startQuiz()" type="submit"> Start M-Check</button>
   </div>
 
@@ -264,9 +264,14 @@
       help with those things that are beyond your current ability. </p>
     <p id="report"></p>
     <br>
-    <button type="submit" onclick="copyReport(document.getElementById('report').innerHTML)">Copy your report to the clipboard</button>
+    <p>If you would like to copy this report to save it for later, press the button below followed by the 'CTRL and C'. You can then paste it or save it somewhere else by pressing 'CTRL and V'.</p>
+    <p>If you're on a mobile, hold your finger on the text until the option to copy is displayed. You can do the same to paste somewhere else later.</p>
+    <button type="submit" onclick="copyReport(document.getElementById('report').innerHTML)">Copy your report</button>
   </div>
-
+  <br><br>
+  <footer class="text-uppercase text-center footer">
+    <p style="text-align: center">Copyright @ M-Check UK</p>
+    </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>

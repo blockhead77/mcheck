@@ -2,7 +2,7 @@ body {
   background-color: #ece1ca;
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding-bottom: 60px;
 }
 
 img {
@@ -19,7 +19,16 @@ img {
   font-weight: bolder;
   font-size: larger;
 }
-
+.footer{
+  background-color: rgb(52, 42, 90);
+  color: rgb(252, 255, 215);
+  position: fixed; 
+  bottom:0; 
+  height:auto; 
+  padding-top:10px;
+  width:100%; 
+  text-align:center"
+}
 .mcheck-container {
   max-width: max-content;
   margin: 1rem auto;
@@ -108,7 +117,7 @@ img {
   }
 }
 @media screen and (max-width: 500px) {
-    p#mobile {
+    p#mobiles {
       display: none;
 }
 }
@@ -135,7 +144,7 @@ img {
   text-align: center;
 }
 #panel {
-  max-width: 700px;
+  max-width: 400px;
   margin: 1rem auto;
   padding: 2em;
   background-color: rgb(255, 255, 255);
